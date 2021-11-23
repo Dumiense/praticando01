@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function cal() {
+        let peso = Number(txtp.value)
+        let alt = Number(txta.value)
+        alt /= 100
+        let altquad = alt * alt
+        let imc = (peso / altquad).toFixed(2)
+        res.innerHTML = `o seu IMC é: ${imc}kg/m² `
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Calculadora IMC</h1>
+    <p>Seu peso: <input type="number" id="txtp" /></p>
+    <p>Sua altura: <input type="number" id="txta" /></p>
+    <input type="button" value="calcular" onclick="cal()" />
+
+    <div id="res"></div>
+  </body>
+</html>

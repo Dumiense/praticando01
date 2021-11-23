@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let mult3 = 0
+      let mult5 = 0
+
+      for (let i = 2; i < 1000; i++) {
+        mult3 += i % 3 == 0 ? i : 0
+        mult5 += i % 5 == 0 ? i : 0
+      }
+      document.write(`A soma dos múltiplo de 3 é: ${mult3} `)
+      document.write(`A soma dos múltiplo de 5 é: ${mult5} `)
+      document.write(`A soma dos múltiplos de 3 e 5 é: ${mult3 + mult5} `)
+    </script>
+  </head>
+
+  <body></body>
+</html>
